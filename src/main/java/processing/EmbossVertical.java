@@ -15,8 +15,8 @@ public class EmbossVertical {
     private static final String pathToSave = "examples/EmbossVerticalConverted.png";
 
     public static void main(String[] args) throws IOException {
-        Image monochrome = new MonochromeGrayConverter(new Image(ImageIO.read(new File(pathToImage)))).convert();
-        Image convert = new Emboss(monochrome, Emboss.Type.VERTICAL).convert();
+        //Image monochrome = new MonochromeGrayConverter(new Image(ImageIO.read(new File(pathToImage)))).convert();
+        Image convert = new Emboss(new Image(ImageIO.read(new File(pathToImage))), Emboss.Type.VERTICAL).convert();
 
         File file = new File(pathToSave);
 

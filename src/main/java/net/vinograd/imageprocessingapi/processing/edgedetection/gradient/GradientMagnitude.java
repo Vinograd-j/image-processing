@@ -16,11 +16,16 @@ public class GradientMagnitude {
         this.gradientCalculator = gradientCalculator;
     }
 
-    public Image apply(){
+    public Image apply() {
         return image.mapToNew((x, y) -> {
-            Color bounded = new Color(Math.max(0, Math.min(gradientCalculator.calculateIntensity(x, y), 255)));
-            return new PixelColor(bounded.getRed(), bounded.getGreen(), bounded.getBlue());
+            int gx = gradientCalculator.gradientX(x, y);
+            int gy = gradientCalculator.gradientY(x, y);
+            int magnitude = (int) Math.sqrt(gx * gx + gy * gy);
+
+            int boundedValue = Math.max(0, Math.min(magnitude, 255));
+            return new PixelColor(boundedValue, boundedValue, boundedValue);
         });
     }
+
 
 }

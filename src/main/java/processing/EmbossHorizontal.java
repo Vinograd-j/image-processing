@@ -15,8 +15,8 @@ public class EmbossHorizontal {
     private static final String pathToSave = "examples/EmbossHorizontalConverted.png";
 
     public static void main(String[] args) throws IOException {
-        Image monochrome = new MonochromeGrayConverter(new Image(ImageIO.read(new File(pathToImage)))).convert();
-        Image convert = new Emboss(monochrome, Emboss.Type.HORIZONTAL).convert();
+        //Image monochrome = new MonochromeGrayConverter(new Image(ImageIO.read(new File(pathToImage)))).convert();
+        Image convert = new Emboss(new Image(ImageIO.read(new File(pathToImage))), Emboss.Type.HORIZONTAL).convert();
 
         File file = new File(pathToSave);
 
