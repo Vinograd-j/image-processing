@@ -1,7 +1,6 @@
 package processing;
 
 import net.vinograd.imageprocessingapi.processing.filter.matrix.Emboss;
-import net.vinograd.imageprocessingapi.processing.filter.point.MonochromeGrayConverter;
 import net.vinograd.imageprocessingapi.processing.image.Image;
 
 import javax.imageio.ImageIO;

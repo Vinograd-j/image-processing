@@ -4,7 +4,6 @@ import net.vinograd.imageprocessingapi.processing.edgedetection.gradient.Gradien
 import net.vinograd.imageprocessingapi.processing.edgedetection.gradient.GradientMagnitude;
 import net.vinograd.imageprocessingapi.processing.edgedetection.gradient.SobelGradientCalculator;
 import net.vinograd.imageprocessingapi.processing.filter.point.MonochromeGrayConverter;
-import net.vinograd.imageprocessingapi.processing.filter.point.NegativeFilter;
 import net.vinograd.imageprocessingapi.processing.image.Image;
 
 import javax.imageio.ImageIO;

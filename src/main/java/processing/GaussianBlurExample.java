@@ -14,7 +14,7 @@ public class GaussianBlurExample {
     private static final String pathToSave = "examples/GaussianBlurConverted.jpg";
 
     public static void main(String[] args) throws IOException {
-        Image convert = new GaussianBlur(new Image(ImageIO.read(new File(pathToImage))), 3, 7).convert();
+        Image convert = new GaussianBlur(new Image(ImageIO.read(new File(pathToImage))), 7, 9).convert();
 
         File file = new File(pathToSave);
 

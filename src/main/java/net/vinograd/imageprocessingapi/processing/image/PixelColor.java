@@ -44,4 +44,8 @@ public class PixelColor {
         return value;
     }
 
+    public static int fromGrayscale(int grayscale){
+        return new PixelColor(grayscale, grayscale, grayscale).getRgb();
+    }
+
 }

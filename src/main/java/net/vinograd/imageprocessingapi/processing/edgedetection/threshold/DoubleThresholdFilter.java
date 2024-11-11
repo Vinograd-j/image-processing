@@ -30,9 +30,9 @@ public class DoubleThresholdFilter implements ThresholdFilter{
 
     @Getter
     public enum Bound {
-        UPPER_BOUND(255),
-        MIDDLE_BOUND(127),
-        LOWER_BOUND(0);
+        UPPER_BOUND(PixelColor.fromGrayscale(255)),
+        MIDDLE_BOUND(PixelColor.fromGrayscale(127)),
+        LOWER_BOUND(PixelColor.fromGrayscale(0));
 
         private final int value;
 
